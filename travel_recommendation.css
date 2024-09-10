@@ -8,22 +8,29 @@ body{
 }
 
 nav{
+    font-weight: bold;
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    padding: 10px 5px;
+
     align-items: center;
+    background-image:  linear-gradient(to  right, rgba(1, 31, 31), rgba(2, 84, 92,0.9)),url(https://www.camer237.com/wp-content/uploads/2022/07/Vue-aerienne-de-Douala-bonanjo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    width:50px;
+    font-size: 20px;
+    font-style: italic;
+    padding-left: 3px;
+    border-left: 4px solid white;
+    color: #ffffff;
  
 
 }
-#logo{
-    width:15%;
-    display: flex;
-    flex-direction:row;
-    justify-content:space-between
-}
 #menu{
-    width:30%;
+    width:300px;
 }
 
 
@@ -34,5 +41,103 @@ nav{
    
     justify-content:space-around ;
 }
+
+#search-bar{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:8px 10px;
+    margin: 1px 4px;
+    border-radius: 25px;
+    
+   
+}
+#query{
+    flex: 1;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 13px;
+    color: white;
+    color: #046e75 ;
+}
+#query:focus{
+    border: none;
+    outline: none;
+}
+
+#search,#reset{
+    background-color: #046e75;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 13px;
+
+}
+
+#search:hover,#reset:hover{
+    background-color: #044e53;
+}
+
+
+/* ------------------------------css sur la partie home-----------------------------------*/
+
+.home{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 90vh;
+    width: auto;
+    background-image:  linear-gradient(to right, rgba(4, 110, 117,1),rgba(255,255,255,0.5)),url(https://www.camer237.com/wp-content/uploads/2022/07/Vue-aerienne-de-Douala-bonanjo.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-left: 50px;
+    
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+
+}
+.barre{
+    background-color:white;
+    display: inline-block;
+    height: 250px;
+    width: 3px;
+    margin-top: 20px;
+}
+.social-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-list a{
+    font-size:20px;
+   color: white;
+}
+
+
+.home-texte{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 20px 0 0 120px;
+}
+.titre{
+    font-size:60px;
+    font-weight: bold;
+    width: 50px;
+    color: white;
+}
+
 
 

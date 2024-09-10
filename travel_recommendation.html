@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Recommendation</title>
     <link rel="stylesheet" href="travel_recommendation.css">
@@ -9,13 +10,9 @@
 <body>
     <!--barre de navigation -->
     <nav>
-        <!--logo et nom du site-->
-        <div id='logo'>
-            <!--logo du site-->
-            <img class="logo1" src="#" alt="logo">
             <!--nom du site-->
-            <h4 class='logo2'>JourneyGate</h4>
-        </div>
+            <h4 class='logo'>JourneyGate</h4>
+     
 
         <!--menu-->
         <div id='menu'>
@@ -27,15 +24,43 @@
         </div>
 
         <!--barre de recherche-->
-        <form action="#" id='search'>
+        <form action="#" id='search-bar'>
             <!--champs texte pour entrer la destination-->
-            <input type="text" id="query" name="query" placeholder="Votre Destination">
+            <input type="text" id="query" name="query" placeholder="Enter a Destination">
             <!--bouton pour lancer la recherche-->
-            <button type='submit'>Recherche</button>
+            <button type='submit' id="search">Search</button>
             <!--bouton pour reinitialiser le champs de recherche-->
-            <button type="reset">Reset</button>
+            <button type="reset" id="reset">Reset</button>
         </form>
     </nav>
+    <!--page d'accueil-->
+    <div  class="home">
+        <!--lien vers les reseaux sociaux-->
+        <div class="social">
+            <div class="barre"></div>
+            <!--liste des resaux-->
+            <div class="social-list">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <!--HOME TEXTE-->
+        <div class="home-texte">
+            <!--grand tittre-->
+            <h1 class="titre">EXPLORE DREAM DESTINATION</h1>
+            <!--description-->
+            <p>it encourages exploration of unfamiliar territories,
+             embbracing diverse cultures and landcapes, while pursuing 
+             the desired destination that captivates the heart and ignites
+              a sense of wander</p>
+            <!--bouton book now-->
+            <a href="#" id="book-now">BOOK NOW</a>
+        </div>
+    </div>
     
 </body>
 </html>
+
+
