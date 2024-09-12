@@ -13,6 +13,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    padding-left: 10px;
 
     align-items: center;
     background-image:  linear-gradient(to  right, rgba(1, 31, 31), rgba(2, 84, 92,0.9)),url(https://www.camer237.com/wp-content/uploads/2022/07/Vue-aerienne-de-Douala-bonanjo.jpg);
@@ -26,6 +27,7 @@ nav{
     padding-left: 3px;
     border-left: 4px solid white;
     color: #ffffff;
+    padding-left: 10px;
  
 
 }
@@ -37,9 +39,16 @@ nav{
 .list-menu{
     display: flex;
     flex-direction: row;
-    list-style: none;
+    
    
     justify-content:space-around ;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #046e75;
 }
 
 #search-bar{
@@ -90,9 +99,9 @@ nav{
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    height: 90vh;
-    width: auto;
-    background-image:  linear-gradient(to right, rgba(4, 110, 117,1),rgba(255,255,255,0.5)),url(https://www.camer237.com/wp-content/uploads/2022/07/Vue-aerienne-de-Douala-bonanjo.jpg);
+    height:max-content;
+    width:auto;
+    background-image:  linear-gradient(to right, rgba(4, 110, 117,0.8),rgba(255,255,255,0.5)),url(https://www.camer237.com/wp-content/uploads/2022/07/Vue-aerienne-de-Douala-bonanjo.jpg);
     background-size: cover;
     background-position: center;
     padding-left: 50px;
@@ -102,7 +111,7 @@ nav{
 .social{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
 
 
@@ -112,16 +121,16 @@ nav{
     display: inline-block;
     height: 250px;
     width: 3px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .social-list{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 .social-list a{
-    font-size:20px;
+    font-size:25px;
    color: white;
 }
 
@@ -129,15 +138,219 @@ nav{
 .home-texte{
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    margin: 20px 0 0 120px;
+    gap: 8px;
+    margin: 10px 0 0 120px;
 }
-.titre{
-    font-size:60px;
+.home-titre{
+    font-size:50px;
     font-weight: bold;
-    width: 50px;
+    width: 70px;
     color: white;
 }
+
+.texte{
+    color: white;
+    width: 300px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#book-now{
+    width: 100px;
+    font-size: 15px;
+    background-color: rgba(2, 84, 92,0.5);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+#book-now:hover{
+    background-color: #046e75;
+}
+
+
+.result{
+    margin-left: 300px;
+    width: 400px;
+    
+}
+.bar{
+    background-color: rgba(2, 84, 92,0.5);
+    width: 400px;
+    height: 30px;
+    margin: 30px 0 15px 0;
+    border-radius: 10px;
+}
+.result-b{
+    width: 400px;
+    background-color: white;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+#resultat{
+    margin-bottom: 100px;
+}
+.result-box img{
+    width: 400px;
+    height: 250px;
+}
+.result-box h3{
+    margin-left: 5px;
+}
+.result-box p{
+    margin-top: 0px;
+    color: rgba(1, 36, 39, 0.4);
+    margin-left: 10px;
+
+}
+
+.result-box button{
+   background-color: #044e53;
+   margin: 5px 0 10px 20px;
+   color: white;
+   border: none;
+   border-radius: 3px;
+   padding: 5px;
+}
+
+/* --------------------------- about us-------------------------------*/
+
+
+.about-titre{
+    color: white;
+    font-size: 50px;
+
+}
+
+.about-texte{
+    color:white;
+    background-color: rgba(1, 36, 39, 0.5);
+    padding: 15px 15px;
+   
+    width:900px;
+    text-align:left;
+    line-height: 25px;
+    
+}
+
+.about-team{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    position: relative;
+    margin-left: 40px;
+
+}
+.about-team h1{
+    color: white;
+    width: 40px;
+    font-size: 40px;
+    margin-right: 50px;
+
+}
+
+.team{
+    display: flex;
+    margin-right: 15px;
+    gap: 10px;
+}
+.team li{
+    background-color: rgba(1, 36, 39, 0.5);
+    border-radius: 5px;
+    list-style: none;
+    text-align: center;
+    width: 150px;
+    height: 120px;
+}
+
+.team li h2{
+    color: rgb(6, 8, 153);
+    text-align: left;
+    font-size: 16px;
+    margin-left: 3px;
+}
+.team li p{
+    font-size: 15px;
+    text-align: left;
+    margin-left: 3px;
+}
+
+.team li a{
+    
+    background-color: blue;
+    border-radius: 2px;
+    padding: 5px;
+    font-size: 10px;
+
+}
+
+/*--------------------contact us--------------------------------*/
+
+.contact{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    
+}
+.contact-titre{
+    width: 500px;
+    text-align: left;
+    margin-left: 60px;
+}
+.contact-titre h1{
+    font-size: 60px;
+    color: white;
+
+}
+
+.contact-titre p{
+    font-size: 15px;
+    color: white;
+
+}
+#form-contact{
+    width: 600px;
+    margin-left: 40px;
+    background-color: rgba(1, 36, 39, 0.5);
+    text-align: center;
+    padding: 15px 0 15px 0;
+    
+    
+    
+}
+#form-contact input,textarea{
+    width: 550px;
+    height: 35px;
+    background-color: rgba(1, 36, 39, 0.5);
+    border: 1px solid rgba(239, 243, 243, 0.5);
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+}
+#form-contact textarea{
+    height: 100px;
+}
+#form-contact label{
+    position: relative;
+    left: -230px;
+    color: white;
+    
+}
+
+#submit{
+    width: 550px;
+    color: white;
+    background-color: #046e75;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 0 8px 0;
+
+}
+
 
 
 
