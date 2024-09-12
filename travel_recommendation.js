@@ -1,5 +1,5 @@
 // declaration des varaibles
-const reset = document.getElementById('reset');
+const btnreset = document.getElementById('reset');
 const btnsearch = document.getElementById('search');
 
 
@@ -75,7 +75,7 @@ function searchCountries() {
   btnsearch.addEventListener('click', searchCountries);
 
 /**la foction de recherche */
-function search(query, data) {
+/*function search(query, data) {
     if (typeof query !== 'string') {
             console.error("La variable 'query' n'est pas une chaîne de caractères.");
             return [];
@@ -84,4 +84,12 @@ function search(query, data) {
 
     const foundkeys = Object.keys(data).filter(key => key.toLowerCase().includes(queryLower));
     return foundkeys;
+}*/
+
+function resetResult()
+{
+    const query = document.getElementById('query').value='';
+    const resultt= document.getElementById('resultat');
+    resultt.style.display='none';
 }
+btnreset.addEventListener('click', resetResult);
